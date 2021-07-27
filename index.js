@@ -68,8 +68,8 @@ class Bill {
         foodPrice.innerHTML = 'R$ ' + item.price;
 
         foodName.onclick = () => {
-          confirm('Tem certeza que quer deletar esse item ?')
-          if (confirm) {
+          let response = confirm('Tem certeza que quer deletar esse item ?')
+          if (response) {
             this.removeItem(item.id);
           }
         }
